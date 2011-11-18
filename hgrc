@@ -1,0 +1,25 @@
+[ui]
+username = Shouichi KAMIYA <shouichi.kamiya@gmail.com>
+verbose = true
+editor = vi
+ignore = ~/.hgignore
+
+[extensions]
+color =
+pager =
+purge =
+fetch =
+progress =
+graphlog =
+rebase =
+transplant =
+record =
+shelve =
+
+[color]
+status.added = green bold
+status.modified = yellow bold
+
+[pager]
+pager = LESS='FSRX' less
+quiet = true

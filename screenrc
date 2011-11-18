@@ -1,0 +1,11 @@
+startup_message off
+#escape "^|\\"
+#escape ^}]
+escape ^_-
+vbell off
+defscrollback 100000
+hardstatus string '%{= kK}%{w}%H %{K}%= %{= kw}%?%-Lw%?%{M}(%{W}%n*%f %t%?(%u)%?%{M})%{w}%?%+Lw%?%?%= %{K}%{B} %{w}%M%{K} %{w}%d%{K} %{w}%c%{K}'
+hardstatus alwayslastline
+autodetach on
+defutf8 on
+bind ^k kill

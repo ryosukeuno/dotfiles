@@ -1,0 +1,24 @@
+[user]
+	name = Shouichi KAMIYA
+	email = shouichi.kamiya@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[push]
+	default = matching
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	unstage = reset HEAD --
+	g = grep --color
+[core]
+	pager = less -R
+	whitespace = trailing-space,space-before-tab
+	excludesfile = ~/.gitignore
+	editor = vi
+[apply]
+	whitespace = error-all

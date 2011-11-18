@@ -1,0 +1,47 @@
+syntax: glob
+
+# Editor Backups #
+##################
+*~
+*.swp
+*.orig
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.a
+*.lo
+*.la
+*.so
+*.so.*
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.tgz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+*.core
+
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
