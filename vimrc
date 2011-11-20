@@ -85,7 +85,7 @@ endif
 " -------------------------------------------------------------
 set autoindent smartindent
 set smarttab
-set tabstop=8 softtabstop=8 shiftwidth=8
+set tabstop=2 softtabstop=2 shiftwidth=2
 set expandtab
 set cinoptions=t0,:0,g0,(0
 set backspace=indent,eol,start
