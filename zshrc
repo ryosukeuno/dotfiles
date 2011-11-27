@@ -29,6 +29,8 @@ export LESS='--tabs=4 --no-init --long-prompt --ignore-case'
 export LESSEDIT='vi %f'
 
 # make less more friendly
+autoload colors
+colors
 export LESS_TERMCAP_md="${terminfo[bold]}${fg_bold[white]}" # bold/ bright
 export LESS_TERMCAP_mh="${fg[white]}"                       # dim/ half
 export LESS_TERMCAP_me="${terminfo[sgr0]}"                  # normal (turn off all attributes)
@@ -74,8 +76,6 @@ esac
 #
 # set prompt
 #
-autoload colors
-colors
 setup_prompt () {
     psvar=()
     vcs_info
@@ -278,6 +278,7 @@ alias stop="kill -TSTP"
 alias ctags="ctags --exclude=.git --exclude=.svn --exclude=log"
 
 # git
+alias g='git'
 alias gp='git pull'
 alias gl='git log'
 alias gsl='git shortlog'
@@ -297,6 +298,7 @@ alias ha='hg add'
 alias hs='hg st'
 alias hd='hg diff'
 alias hl='hg log'
+alias hlp='hg log -p'
 alias hc='hg ci'
 alias hp='hg pull'
 alias hclean='hg st -un | xargs rm'
