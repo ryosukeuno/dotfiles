@@ -19,6 +19,6 @@
 	pager = less -R
 	whitespace = trailing-space,space-before-tab
 	excludesfile = ~/.gitignore
-	editor = vi
+	editor = vim
 [apply]
 	whitespace = error-all
