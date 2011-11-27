@@ -6,7 +6,7 @@ call vundle#rc()
 
 " Plugins
 " -------------------------------------------------------------
-Bundle 'https://github.com/vim-scripts/AutoComplPop'
+" Bundle 'https://github.com/vim-scripts/AutoComplPop'
 Bundle 'https://github.com/vim-scripts/FuzzyFinder'
 Bundle 'https://github.com/vim-scripts/L9'
 Bundle 'https://github.com/vim-scripts/VimClojure'
