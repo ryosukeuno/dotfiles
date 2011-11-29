@@ -209,6 +209,10 @@ autoload zed
 
 #zstyle ':completion:*:default' menu select=1
 
+# kill autocompletion
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([%0-9]#)*=0=01;31'
+zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
+
 ## Prediction configuration
 #
 #autoload predict-on
