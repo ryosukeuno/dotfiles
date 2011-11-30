@@ -17,7 +17,7 @@ Bundle 'https://github.com/vim-scripts/syntaxhaskell.vim'
 Bundle 'https://github.com/kana/vim-filetype-haskell'
 Bundle 'https://github.com/kchmck/vim-coffee-script'
 Bundle 'https://github.com/pangloss/vim-javascript'
-Bundle 'https://github.com/mattn/googlesuggest-complete-vim'
+Bundle 'git@github.com:shouichi/googlesuggest-complete-vim.git'
 Bundle 'https://github.com/mileszs/ack.vim'
 Bundle 'https://github.com/tpope/vim-endwise'
 Bundle 'https://github.com/tpope/vim-fugitive'
@@ -137,6 +137,7 @@ set history=50
 " Others
 " -------------------------------------------------------------
 set completefunc=googlesuggest#Complete
+let g:googlesuggest_language = 'en'
 nmap <C-c> :FufBuffer<CR>
 
 " Auto execute commands
