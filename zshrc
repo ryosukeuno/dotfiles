@@ -171,6 +171,9 @@ bindkey "^R" history-incremental-pattern-search-backward
 bindkey "^[u" undo
 bindkey "^[r" redo
 
+# reverse
+bindkey "^t" reverse-menu-complete
+
 # new line but dont exec
 bindkey '^J' self-insert-unmeta
 
@@ -213,6 +216,9 @@ autoload zed
 # kill autocompletion
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([%0-9]#)*=0=01;31'
 zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
+
+# matching: ignore case, -_. are the delimiters
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z} r:|[-_.]=**'
 
 ## Prediction configuration
 #
