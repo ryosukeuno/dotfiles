@@ -8,6 +8,7 @@ export LANG="en_US.UTF-8"
 # Macports
 case ${OSTYPE} in
     darwin*)
+        export JVM_OPTS='-Djava.awt.headless=true'
         export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
         export PATH=/opt/local/bin:$JAVA_HOME/bin:$PATH
         export LIBRARY_PATH=/opt/local/lib:$LIBRARY_PATH
