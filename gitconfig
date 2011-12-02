@@ -22,3 +22,5 @@
 	editor = vim
 [apply]
 	whitespace = error-all
+[github]
+	user = shouichi
