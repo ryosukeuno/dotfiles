@@ -200,6 +200,8 @@ endfunction
 
 function! Cpp_Settings()
   call C_Settings()
+  setlocal expandtab
+  setlocal ts=2 sts=2 sw=2
 endfunction
 
 let java_highlight_all=1
