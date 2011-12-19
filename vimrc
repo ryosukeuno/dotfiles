@@ -10,7 +10,7 @@ call vundle#rc()
 Bundle 'https://github.com/vim-scripts/FuzzyFinder'
 Bundle 'https://github.com/vim-scripts/L9'
 Bundle 'https://github.com/vim-scripts/VimClojure'
-Bundle 'https://github.com/vim-scripts/Vim-JDE'
+" Bundle 'https://github.com/vim-scripts/Vim-JDE'
 Bundle 'https://github.com/derekwyatt/vim-scala'
 Bundle 'https://github.com/vim-scripts/surround.vim'
 Bundle 'https://github.com/vim-scripts/syntaxhaskell.vim'
