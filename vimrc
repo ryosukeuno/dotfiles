@@ -133,6 +133,7 @@ set keywordprg=man\ -a
 " Completion, History
 " -------------------------------------------------------------
 set wildmenu
+set wildignorecase
 set history=50
 
 " Others
