@@ -173,7 +173,7 @@ bindkey "^[u" undo
 bindkey "^[r" redo
 
 # reverse
-bindkey "^t" reverse-menu-complete
+bindkey "^[[Z" reverse-menu-complete
 
 # new line but dont exec
 bindkey '^J' self-insert-unmeta
