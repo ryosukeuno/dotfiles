@@ -133,7 +133,11 @@ set keywordprg=man\ -a
 " Completion, History
 " -------------------------------------------------------------
 set wildmenu
-set wildignorecase
+if version >= 703
+  if has('patch107')
+    set wildignorecase
+  endif
+endif
 set history=50
 
 " Others
