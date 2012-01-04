@@ -28,5 +28,7 @@
 	editor = vim
 [apply]
 	whitespace = error-all
+[branch]
+	autosetuprebase = always
 [github]
 	user = shouichi
