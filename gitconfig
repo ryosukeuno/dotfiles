@@ -17,6 +17,10 @@
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	unstage = reset HEAD --
 	g = grep --color
+	fixup = commit --amend -C HEAD
+	modified-files = ls-files -m
+	untracked-files = ls-files -o --exclude-standard
+	ignored-files = ls-files --others -i --exclude-standard
 [core]
 	pager = less -R
 	whitespace = trailing-space,space-before-tab
