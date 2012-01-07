@@ -160,7 +160,7 @@ augroup Autocmds
   au BufReadPost * silent! set fileformat=unix
   au BufWritePost * if getline(1) =~ "^#!" | exe "silent !chmod +x %" | endif
   au BufNewFile,BufReadPost \cmakefile,*.mak setlocal noexpandtab
-  au BufNewFile,BufRead *.thor set filetype=ruby
+  au BufNewFile,BufRead *.thor,buildfile,Buildfile set filetype=ruby
 
   au FileType c          call C_Settings()
   au FileType make       call Makefile_Settings()
