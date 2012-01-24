@@ -71,6 +71,7 @@ inoremap <C-k> <C-o>D
 " inoremap <C-y> <C-o>p " This is too slow...
 inoremap <C-j> <C-x><C-u>
 inoremap <C-l> <C-o>:call ToggleLang()<Enter>
+let mapleader = ";"
 
 " File
 " -------------------------------------------------------------
@@ -220,7 +221,6 @@ let vimclojure#HighlightBuiltins = 1
 let vimclojure#ParenRainbow = 1
 let vimclojure#SplitPos = "bottom"
 let vimclojure#SplitSize = 10
-let maplocalleader=";"
 
 function! Scala_Settings()
 endfunction
