@@ -214,6 +214,7 @@ endfunction
 
 let java_highlight_all=1
 function! Java_Settings()
+  setlocal noexpandtab
 endfunction
 
 let vimclojure#WantNailgun = 1
