@@ -1,5 +1,5 @@
-DOT_FILES=ackrc emacs gdbinit gemrc ghci gitconfig gitignore hgignore hgrc\
-	  screenrc tmux.conf vimrc zshrc
+DOT_FILES=ackrc conkyrc emacs gdbinit gemrc ghci gitconfig gitignore hgignore\
+	  hgrc screenrc tmux.conf vimrc zshrc
 
 all: install
 
