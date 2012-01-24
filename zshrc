@@ -256,7 +256,7 @@ case "${OSTYPE}" in
         alias ls="ls --color=auto -Fh"
         alias grep="egrep --color=auto --exclude-dir=.svn --exclude-dir=.git"
         alias jman="LC_ALL=ja_JP.UTF-8 MANPATH=/usr/share/man/ja man"
-        alias gopen="gnome-open"
+        alias open="gnome-open"
         alias df="df -hT"
         ;;
 esac
