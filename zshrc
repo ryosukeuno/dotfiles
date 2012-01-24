@@ -221,6 +221,10 @@ zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 # matching: ignore case, -_. are the delimiters
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z} r:|[-_.]=**'
 
+# exclude binary files
+zstyle ':completion:*:*:vi:*:*files' ignored-patterns '*.o'
+zstyle ':completion:*:*:vi:*:*files' ignored-patterns '*.class'
+
 ## Prediction configuration
 #
 #autoload predict-on
