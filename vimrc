@@ -74,6 +74,7 @@ inoremap <C-k> <C-o>D
 inoremap <C-j> <C-x><C-u>
 inoremap <C-l> <C-o>:call ToggleLang()<Enter>
 let mapleader = ";"
+let maplocalleader = ","
 
 " File
 " -------------------------------------------------------------
