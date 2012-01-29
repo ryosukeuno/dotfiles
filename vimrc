@@ -32,6 +32,8 @@ Bundle 'https://github.com/tpope/vim-rails'
 
 " General
 " -------------------------------------------------------------
+set exrc
+set secure
 set enc=utf-8
 set nocompatible
 set shell=zsh
