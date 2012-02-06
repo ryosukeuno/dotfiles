@@ -75,7 +75,7 @@ inoremap <C-k> <C-o>D
 " inoremap <C-y> <C-o>p " This is too slow...
 inoremap <C-j> <C-x><C-u>
 inoremap <C-l> <C-o>:call ToggleLang()<Enter>
-let mapleader = ";"
+let mapleader = "["
 let maplocalleader = ","
 
 " File
