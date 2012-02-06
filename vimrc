@@ -159,7 +159,8 @@ nmap <C-c> :FufBuffer<CR>
 augroup Autocmds
   au!
   au BufEnter * lcd %:p:h
-  au BufNewFile *.h  call InsertIncludeGuard() | call C_Settings()
+  au BufNewFile *.h  call InsertIncludeGuard()
+  au BufNewFile *.hpp  call InsertIncludeGuard()
   au BufNewFile *.sh call append(0, "#!/bin/sh")             | normal! G
   au BufNewFile *.rb call append(0, "#!/usr/bin/env ruby")   | normal! G
   au BufNewFile *.py call append(0, "#!/usr/bin/env python") | normal! G
@@ -167,6 +168,8 @@ augroup Autocmds
   au BufWritePost * silent! %s/\s\+$//e
   au BufReadPost * silent! set fileformat=unix
   au BufWritePost * if getline(1) =~ "^#!" | exe "silent !chmod +x %" | endif
+  au BufNewFile,BufRead *.h call C_Settings()
+  au BufNewFile,BufRead *.hpp call Cpp_Settings()
   au BufNewFile,BufReadPost \cmakefile,*.mak setlocal noexpandtab
   au BufNewFile,BufRead *.thor,buildfile,Buildfile set filetype=ruby
 
