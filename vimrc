@@ -171,6 +171,7 @@ augroup Autocmds
   au BufNewFile,BufRead *.thor,buildfile,Buildfile set filetype=ruby
 
   au FileType c          call C_Settings()
+  au FileType yacc       call C_Settings()
   au FileType make       call Makefile_Settings()
   au FileType cpp        call Cpp_Settings()
   au FileType java       call Java_Settings()
