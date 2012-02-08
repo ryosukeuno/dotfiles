@@ -22,7 +22,7 @@
 	untracked-files = ls-files -o --exclude-standard
 	ignored-files = ls-files --others -i --exclude-standard
 [core]
-	pager = less -R
+	pager = less -FXRS -x8
 	whitespace = trailing-space,space-before-tab
 	excludesfile = ~/.gitignore
 	editor = vim
