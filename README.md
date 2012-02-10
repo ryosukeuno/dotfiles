@@ -1,5 +1,6 @@
 # Available Config Files
 * [ackrc](https://github.com/shouichi/dotfiles/blob/master/ackrc)
+* [conkyrc](https://github.com/shouichi/dotfiles/blob/master/conkyrc)
 * [emacs](https://github.com/shouichi/dotfiles/blob/master/emacs)
 * [gdbinit](https://github.com/shouichi/dotfiles/blob/master/gdbinit)
 * [gemrc](https://github.com/shouichi/dotfiles/blob/master/gemrc)
