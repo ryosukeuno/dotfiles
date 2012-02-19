@@ -52,6 +52,7 @@ cd ~ | let g:home = getcwd() | cd -
 noremap - $
 noremap <C-j> 3j
 noremap <C-k> 3k
+noremap ss :w<CR>
 " noremap <C-h> 3h
 " noremap <C-l> 3l
 noremap <Space>. :<C-u>edit $MYVIMRC<Enter>
@@ -66,6 +67,7 @@ nnoremap <C-d> :bd<CR>
 " nnoremap <Space>h :hide bp!<CR>
 " nnoremap <Space>l :hide bn!<CR>
 vnoremap s y:%s/<C-R>"//g<Left><Left>
+inoremap jj <Esc>
 inoremap <C-b> <left>
 inoremap <C-f> <right>
 inoremap <C-a> <Home>
