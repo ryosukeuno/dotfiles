@@ -289,6 +289,7 @@ alias ctags="ctags --exclude=.git --exclude=.svn --exclude=log"
 alias g='git'
 alias gp='git pull'
 alias gl='git log'
+alias gt='git tag'
 alias gsl='git shortlog'
 alias glp='git log -p'
 alias gd='git diff'
