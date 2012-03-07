@@ -270,6 +270,7 @@ alias ll="ls -l"
 alias lal="ls -Al"
 
 alias t="tree"
+alias ta="tree -a"
 
 alias h=history
 
