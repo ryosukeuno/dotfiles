@@ -71,6 +71,12 @@
 (global-set-key "\M-n" '(lambda () (interactive) (dotimes (i 3) (next-line))))
 (global-set-key "\M-p" '(lambda () (interactive) (dotimes (i 3) (previous-line))))
 
+;; SKK
+(require 'skk-autoloads)
+(setq default-input-method "japanese-skk")
+(global-set-key "\C-x\C-j" 'skk-mode)
+(global-set-key "\C-xj" 'skk-auto-fill-mode)
+(global-set-key "\C-xt" 'skk-tutorial)
 
 (defadvice save-buffers-kill-emacs (around no-query-kill-emacs activate)
            "Prevent annoying \"Active processes exist\" query when you quit Emacs."
