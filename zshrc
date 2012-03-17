@@ -265,9 +265,13 @@ case "${OSTYPE}" in
         ;;
 esac
 
+alias l="ls"
 alias la="ls -A"
 alias ll="ls -l"
 alias lal="ls -Al"
+
+alias v="vi"
+alias e="emacs"
 
 alias t="tree"
 alias ta="tree -a"
