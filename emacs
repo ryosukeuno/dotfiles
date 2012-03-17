@@ -43,16 +43,16 @@
 (display-time)
 
 ;; show line number
-;(global-linum-mode 1)
-;(setq linum-format
-;      (lambda (line)
-;        "Right justified line number format"
-;        (propertize (format
-;                     (let ((w (length (number-to-string
-;                                       (count-lines (point-min) (point-max))))))
-;                       (concat "%" (number-to-string w) "d| "))
-;                     line)
-;                    'face 'linum)))
+(global-linum-mode 1)
+(setq linum-format
+      (lambda (line)
+        "Right justified line number format"
+        (propertize (format
+                     (let ((w (length (number-to-string
+                                       (count-lines (point-min) (point-max))))))
+                       (concat "%" (number-to-string w) "d| "))
+                     line)
+                    'face 'linum)))
 
 ;; character encoding utf8
 (setq locale-coding-system 'utf-8-unix)
