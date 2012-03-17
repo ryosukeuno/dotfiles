@@ -14,6 +14,7 @@ Bundle 'https://github.com/vim-scripts/VimClojure'
 " Bundle 'https://github.com/vim-scripts/Vim-JDE'
 Bundle 'https://github.com/aghareza/vim-gitgrep'
 Bundle 'https://github.com/derekwyatt/vim-scala'
+Bundle 'https://github.com/greyblake/vim-preview'
 Bundle 'https://github.com/vim-scripts/surround.vim'
 Bundle 'https://github.com/vim-scripts/syntaxhaskell.vim'
 Bundle 'https://github.com/kana/vim-filetype-haskell'
@@ -156,6 +157,7 @@ set history=50
 set completefunc=googlesuggest#Complete
 let g:googlesuggest_language = 'en'
 nmap <C-c> :FufBuffer<CR>
+let g:PreviewBrowsers='google-chrome'
 
 " Auto execute commands
 " -------------------------------------------------------------
