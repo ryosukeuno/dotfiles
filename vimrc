@@ -29,6 +29,7 @@ Bundle 'https://github.com/tpope/vim-fugitive'
 Bundle 'https://github.com/tpope/vim-git'
 Bundle 'https://github.com/tpope/vim-haml'
 Bundle 'https://github.com/tpope/vim-rails'
+Bundle 'https://github.com/tyru/skk.vim'
 
 " General
 " -------------------------------------------------------------
@@ -264,6 +265,17 @@ endfunction
 
 function! Yaml_Settings()
 endfunction
+
+" SKK
+let &statusline .= '%{SkkGetModeStr()}'
+let skk_control_j_key = "<C-r>"
+let skk_jisyo = '~/.vim/skk-dict'
+let skk_large_jisyo = '/usr/share/skk/SKK-JISYO.L'
+let skk_auto_save_jisyo = 1
+let skk_keep_state = 1
+let skk_egg_like_newline = 1
+let skk_show_annotation = 1
+let skk_use_face = 1
 
 " Other functions
 " -------------------------------------------------------------
