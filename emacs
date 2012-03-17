@@ -81,6 +81,9 @@
 ;; Langages
 ;; -------------------------------------------------------------
 
+;; C
+(setq c-default-style "linux")
+
 ;; Haskell
 (autoload 'haskell-mode "haskell-mode" "Major mode for Haskell." t)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
