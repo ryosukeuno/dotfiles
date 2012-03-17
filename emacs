@@ -81,36 +81,24 @@
 ;; Langages
 ;; -------------------------------------------------------------
 
-;; Clojure
-(require 'slime)
-(require 'paredit)
-(require 'clojure-mode)
-(require 'swank-clojure)
-
-(setq slime-protocol-version 'ignore)
-(custom-set-faces
- '(slime-repl-result-face ((t (:foreground "Red")))))
-(add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
-
 ;; Haskell
-;(load "/opt/local/share/emacs/site-lisp/haskell-mode-2.4/haskell-site-file")
-;(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
-;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
-;(add-hook 'haskell-mode-hook 'font-lock-mode)
-;(add-hook 'haskell-mode-hook 'imenu-add-menubar-index)
+(autoload 'haskell-mode "haskell-mode" "Major mode for Haskell." t)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
+(add-hook 'haskell-mode-hook 'font-lock-mode)
+(add-hook 'haskell-mode-hook 'imenu-add-menubar-index)
 
 ;; Scheme
 (setq scheme-program-name "gosh -i")
-(autoload 'scheme-mode "cmuscheme" "Major mode for Scheme." t)
-(autoload 'run-scheme "cmuscheme" "Run an inferior Scheme process." t)
-(defun scheme-other-window ()
-  "Run scheme on other window"
-  (interactive)
-  (switch-to-buffer-other-window
-    (get-buffer-create "*scheme*"))
-  (run-scheme scheme-program-name))
-(define-key global-map
-            "\C-cs" 'scheme-other-window)
+(autoload 'scheme-mode "scheme-mode" "Major mode for Scheme." t)
+(autoload 'run-scheme "run-scheme" "Run an inferior Scheme process." t)
+(define-key global-map "\C-cs"
+            (lambda ()
+              "Run scheme on other window"
+              (interactive)
+              (switch-to-buffer-other-window
+                (get-buffer-create "*scheme*"))
+              (run-scheme scheme-program-name)))
 
 
 ;; Functions
