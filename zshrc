@@ -271,6 +271,7 @@ alias la="ls -A"
 alias ll="ls -l"
 alias lal="ls -Al"
 
+alias c="cd"
 alias v="vi"
 alias e="emacs"
 
