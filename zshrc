@@ -222,9 +222,9 @@ zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z} r:|[-_.]=**'
 
 # exclude binary files
-zstyle ':completion:*:*:vi:*:*files' ignored-patterns '*.o'
-zstyle ':completion:*:*:vi:*:*files' ignored-patterns '*.class'
-zstyle ':completion:*:*:vi:*:*files' ignored-patterns '*.eps'
+zstyle ':completion:*:*:v:*:*files' ignored-patterns '*.o'
+zstyle ':completion:*:*:v:*:*files' ignored-patterns '*.class'
+zstyle ':completion:*:*:v:*:*files' ignored-patterns '*.eps'
 
 ## Prediction configuration
 #
