@@ -9,6 +9,7 @@
 * [gitignore](https://github.com/shouichi/dotfiles/blob/master/gitignore)
 * [hgignore](https://github.com/shouichi/dotfiles/blob/master/hgignore)
 * [hgrc](https://github.com/shouichi/dotfiles/blob/master/hgrc)
+* [pryrc](https://github.com/shouichi/dotfiles/blob/master/pryrc)
 * [screenrc](https://github.com/shouichi/dotfiles/blob/master/screenrc)
 * [tmux.conf](https://github.com/shouichi/dotfiles/blob/master/tmux.conf)
 * [vimrc](https://github.com/shouichi/dotfiles/blob/master/vimrc)
