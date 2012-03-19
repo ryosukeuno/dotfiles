@@ -224,6 +224,7 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z} r:|[-_.]=**'
 # exclude binary files
 zstyle ':completion:*:*:vi:*:*files' ignored-patterns '*.o'
 zstyle ':completion:*:*:vi:*:*files' ignored-patterns '*.class'
+zstyle ':completion:*:*:vi:*:*files' ignored-patterns '*.eps'
 
 ## Prediction configuration
 #
