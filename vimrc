@@ -272,6 +272,7 @@ endfunction
 
 " SKK
 let skk_control_j_key = "<C-r>"
+let skk_sticky_key = ';'
 let skk_jisyo_encoding = 'euc-jp'
 let skk_jisyo = '~/.skk-ibus-jisyo'
 let skk_large_jisyo = '/usr/share/skk/SKK-JISYO.L'
