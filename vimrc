@@ -128,7 +128,7 @@ set number
 set nowrap
 set ruler
 set ruf=%45(%12f%=\ %m%{'['.(&fenc!=''?&fenc:&enc).']'}\ %l-%v\ %p%%\ [%02B]%)
-set statusline=%F[%n]%m%=%{(&fenc!=''?&fenc:&enc).':'.&ff}%y\ %{(&list?'>':'')}\ \(%l,%v\)\ %p%%\ [0x%02B]
+set statusline=%{SkkGetModeStr()}\ %F[%n]%m%=%{(&fenc!=''?&fenc:&enc).':'.&ff}%y\ %{(&list?'>':'')}\ \(%l,%v\)\ %p%%\ [0x%02B]
 set showcmd
 set cmdheight=1
 set laststatus=2
@@ -271,7 +271,6 @@ function! Yaml_Settings()
 endfunction
 
 " SKK
-let &statusline .= '%{SkkGetModeStr()}'
 let skk_control_j_key = "<C-r>"
 let skk_jisyo_encoding = 'euc-jp'
 let skk_jisyo = '~/.skk-ibus-jisyo'
