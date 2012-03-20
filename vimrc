@@ -71,6 +71,7 @@ nnoremap <C-d> :bd<CR>
 " nnoremap <Space>l :hide bn!<CR>
 vnoremap s y:%s/<C-R>"//g<Left><Left>
 inoremap jj <Esc>:w<CR>
+inoremap [[ <Esc>
 inoremap <C-b> <left>
 inoremap <C-f> <right>
 inoremap <C-a> <Home>
