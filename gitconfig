@@ -16,6 +16,7 @@
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	unstage = reset HEAD --
+	url = config --get remote.origin.url
 	g = grep --color
 	fixup = commit --amend -C HEAD
 	modified-files = ls-files -m
