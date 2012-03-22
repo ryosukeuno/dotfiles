@@ -277,6 +277,7 @@ alias t="tree"
 alias ta="tree -a"
 
 alias h=history
+compdef h=history
 
 alias du="du -h"
 
@@ -292,20 +293,35 @@ alias ctags="ctags --exclude=.git --exclude=.svn --exclude=log"
 
 # git
 alias g='git'
+compdef g='git'
 alias gp='git pull'
+compdef _git gp=git-pull
 alias gl='git log'
+compdef _git gl=git-log
 alias gt='git tag'
+compdef _git gt=git-tag
 alias gsl='git shortlog'
+compdef _git gsl=git-shortlog
 alias glp='git log -p'
+compdef _git glp=git-log
 alias gd='git diff'
+compdef _git gd=git-diff
 alias gdh='git diff HEAD'
+compdef _git gdh=git-diff
 alias gb='git branch --color'
+compdef _git gb=git-branch
 alias ga='git add'
+compdef _git ga=git-add
 alias gap='git add -p'
+compdef _git gap=git-add
 alias gc='git commit -v'
+compdef _git gc=git-commit
 alias gs='git status'
+compdef _git gs=git-status
 alias gg='git grep --color'
+compdef _git gg=git-grep
 alias gco='git checkout'
+compdef _git gco=git-checkout
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 
 # mercurial
