@@ -55,7 +55,8 @@ noremap - $
 noremap <C-j> 3j
 noremap <C-k> 3k
 noremap ss :w<CR>
-noremap qq :qa!<CR>
+noremap qq :q<CR>
+noremap QQ :qa!<CR>
 " noremap <C-h> 3h
 " noremap <C-l> 3l
 noremap <Space>. :<C-u>edit $MYVIMRC<Enter>
