@@ -270,6 +270,7 @@ alias ll="ls -l"
 alias lal="ls -Al"
 
 alias c="cd"
+compdef c='cd'
 alias v="vi"
 alias e="emacs"
 
